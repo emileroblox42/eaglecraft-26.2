@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Téléchargement Eaglercraft</title>
+</head>
+<body>
+  <p>Le téléchargement de votre jeu démarre automatiquement...</p>
+
+  <script>
+    // Lien direct vers le fichier dans votre Release GitHub
+    const fileUrl = "VOTRE_LIEN_DIRECT_DE_RELEASE";
+    
+    // Déclenche le téléchargement automatique direct
+    const a = document.createElement('a');
+    a.href = fileUrl;
+    a.download = '';
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+  </script>
+</body>
+</html>
